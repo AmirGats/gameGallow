@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.visel__block{
+    width: 700px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.visel{
+    width: 350px;
+    
+}
+
+#gallows {
+    width: 100%; 
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+#men{
+    position: absolute;
+    top: 185px;
+    left: 343px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#head__man{
+    opacity: 0;
+    width: 50%;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#body__man{
+    opacity: 0;
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+}
+#foot__man{
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+}
+
+#hint__block{
+    margin: 50px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#word__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+#word__inner div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+
+#keyboard{
+    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+}
+
+
+#keyboard button{
+    max-width: 60px;
+    padding: 10px;
+    background-color: rgb(152, 166, 226);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.528);
+    transition: all 0.3s;
+    border-radius: 30%;
+}
+
+#keyboard button:hover{
+    background-color: aliceblue;
+    color: rgb(0, 136, 255);
+}
+
+
+
+#keyboard button[data-is-click = "1"]{
+    pointer-events: none;
+    background-color: gray;
+}
